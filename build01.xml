@@ -1,0 +1,19 @@
+<project name="Valores" basedir="." default="main">
+
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="build" />
+	<property name="classes.dir" value="${build.dir}/classes" />
+	<property name="main-class" value="Valores" />
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+
+	<target name="compile" description="Generate documantation">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" />
+	</target>
+
+	<target name="main" depends="clean,compile" />
+
+</project>
