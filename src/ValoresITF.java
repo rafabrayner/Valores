@@ -6,7 +6,7 @@
 
 /**
  *
- * @author eqs
+ * @author eqsaaaaaa
  */
 public interface ValoresITF {
     
